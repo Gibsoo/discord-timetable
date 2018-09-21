@@ -1,0 +1,22 @@
+{
+  "name": "discord-timetable",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "discord"
+  ],
+  "author": {
+    "name": "Gibso"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "discord.js": "^10.0.0",
+    "moment-timezone": "^0.5.14"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}
