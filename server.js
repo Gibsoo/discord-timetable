@@ -13,6 +13,7 @@ client.on('message', msg => {
     var week = parseInt(moment().tz("Europe/Copenhagen").format("W"));
     var day = parseInt(moment().tz("Europe/Copenhagen").format("D"));
     var hour = parseInt(moment().tz("Europe/Copenhagen").format("H"));
+    var days = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"];
     var timetable = [
         [
             [0,0,0,0,0,0,0,0,0,0,"MATHEMATIQUES",0,0,0,"MATHEMATIQUES","G1 - PHYSIQUE-CHIMIE / G2 - SVT","G1 - PHYSIQUE-CHIMIE / G2 - SVT","G1 - SVT / G2 - PHYSIQUE-CHIMIE",0,0,0,0,0,0],
@@ -52,8 +53,8 @@ client.on('message', msg => {
                 sortofweek = 0;
             }
         }
-    }
-    msg.reply(timetable[sortofweek][d][hour] + " à " + hour + " h\, le "+ day+"/"+month);
+     }
+    msg.reply(timetable[sortofweek][d][hour] + " à " + hour + " h\, le "+ days[d] +"/"+month);
   }
 });
 
