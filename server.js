@@ -53,7 +53,7 @@ client.on('message', msg => {
             }
         }
     }
-    msg.reply(timetable[sortofweek][d][hour]);
+    msg.reply(timetable[sortofweek][d][hour] + " à " + hour + " h\, le "+ day+"/"+month);
   }
 });
 
